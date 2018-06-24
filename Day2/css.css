@@ -1,0 +1,35 @@
+
+
+.menu span{
+    display: inline-block;
+    height: 25px;
+    width: 100px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.menu span:hover{
+  background-color: rgb(133, 236, 124);
+}
+
+#xxx{
+  text-align: center;
+  background-color: #ecabe1
+}
+
+.men1{
+  list-style-type: none;
+}
+.menu1>span{
+  display: block;
+  width: 100px;
+  height: 25px;
+  text-align: left;
+  border: 1px rgb(240, 234, 234) solid;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #ecabe1
+}
+
+.menu1 span:hover{
+  background-color: rgb(133, 236, 124);
+}
