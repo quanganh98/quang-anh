@@ -1,0 +1,32 @@
+body{
+    display: normal !important;
+}
+.header {
+    background-color: #0000ff;
+}
+
+.nav {
+    background-color: #800080;
+    text-align: center;
+}
+
+.main {
+    background-color: #ffd700;
+    width: 70%;
+    height: 400px;
+    margin-top: -16px;
+}
+
+.aside {
+    background-color: #808080;
+    position: absolute;
+    left: 70%;
+    margin-left: -3px;
+    top: 8%;
+    overflow: auto;
+    height: 400px ;
+}
+
+.footer {
+    background-color: #00ffff;
+}
