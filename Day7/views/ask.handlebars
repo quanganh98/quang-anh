@@ -1,0 +1,14 @@
+<h1>ask a question</h1>
+<form action="/question/add" method="POST">
+      <h1>Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h1>
+      <textarea class="form-control" maxlength="200" rows="6" id="question" name="questionContent"></textarea>
+      <p>Còn
+        <span id="remain">200</span>/200 kí tự</p>
+      <button class="btn btn-primary" type="submit" id="btn_ask">Gửi</button>
+    </form>
+  <script>
+    let char = 200;
+    document.getElementById("question").addEventListener("input", function(){
+      document.getElementById("remain").innerText = char - document.getElementById("question").value.length;
+    });
+  </script>
