@@ -1,0 +1,39 @@
+<form id="createPlayer">
+    <div>
+        <div>
+            <input type="text" placeholder="Player1" name="player1" id="player1">
+        </div>
+        <div>
+            <input type="text" placeholder="Player2" name="player2" id="player2">
+        </div>
+        <div>
+            <input type="text" placeholder="Player3" name="player3" id="player3">
+        </div>
+        <div>
+            <input type="text" placeholder="Player4" name="player4" id="player4">
+        </div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    $("#createPlayer").submit(function (evt) {
+            evt.preventDefault();
+            newGame = {
+                player1: $("#player1").val(),
+                player2: $("#player2").val(),
+                player3: $("#player3").val(),
+                player4: $("#player4").val(),
+            }
+            $.ajax({
+                url: "/game",
+                type: "POST",
+                data: newGame,
+                success: function(req){
+                        window.location.href = "/game/"+req.gameId;
+                }
+            })
+        })
+</script>

@@ -1,0 +1,49 @@
+<div>
+    <table id="row">
+        <tr>
+            <th></th>
+            <th>{{player1}}</th>
+            <th>{{player2}}</th>
+            <th>{{player3}}</th>
+            <th>{{player4}}</th>
+        </tr>
+        <tr>
+            <td>Sum of scores (0)</td>
+            <td><p id="sumP1">0</p></td>
+            <td><p id="sumP2">0</p></td>
+            <td><p id="sumP3">0</p> </td>
+            <td><p id="sumP4">0</p></td>
+        </tr>
+
+
+
+
+    </table>
+    <button type="submit" id="add">ADD ROUND</button>
+</div>
+<script>
+
+    $("#add").on("click", function (event) {
+        $("#row").append(`
+            <tr>
+            <td> </td>
+            <td>
+                <input type="number" class="p1" >
+            </td>
+            <td>
+                <input type="number" class = "p2">
+            </td>
+            <td>
+                <input type="number" class = "p3">
+            </td>
+            <td>
+                <input type="number" class ="p4">
+            </td>
+        </tr>
+    `
+        )
+    })
+
+    $("#sumP1").val("1sadasd");
+
+</script>
